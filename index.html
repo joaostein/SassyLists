@@ -36,7 +36,7 @@
 
 <div class="jumbotron">
     <div class="container">
-        <h1>SassyLists <small>2.0.0</small></h1>
+        <h1>SassyLists <small>2.1.0</small></h1>
         <p>SassyLists is a toolbox providing you all the functions you need to manipulate your <a href="http://sass-lang.com">Sass</a> lists.</p>
         <p><a class="btn btn-info" href="/documentation/">Read documentation</a> <a class="btn btn-warning" href="https://github.com/Team-Sass/SassyLists/blob/master/CHANGELOG.md">Read changelog</a></p>
     </div>
@@ -105,6 +105,18 @@
             
               
                 <tr>
+                  <td data-small="name"><a href="documentation.html#sl-comma-list">#</a> <code>sl-comma-list</code></td>
+                  <td data-small="desc"><p>Initialize an empty comma-separated list.</p></td>
+                  <td data-small="aliases">
+                  
+                    &mdash;
+                  
+                  </td>
+                </tr>
+              
+            
+              
+                <tr>
                   <td data-small="name"><a href="documentation.html#sl-contain">#</a> <code>sl-contain</code></td>
                   <td data-small="desc"><p>Returns whether <code>$list</code> contains <code>$value</code>.</p></td>
                   <td data-small="aliases">
@@ -142,6 +154,8 @@
               
             
               
+            
+              
                 <tr>
                   <td data-small="name"><a href="documentation.html#sl-every">#</a> <code>sl-every</code></td>
                   <td data-small="desc"><p>Tests whether all items from <code>$list</code> pass the test implemented by <code>$function</code>.</p></td>
@@ -156,7 +170,7 @@
               
                 <tr>
                   <td data-small="name"><a href="documentation.html#sl-explode">#</a> <code>sl-explode</code></td>
-                  <td data-small="desc"><p>Explode <code>$string</code> into a list using <code>$delimiter</code> as a delimiter.</p></td>
+                  <td data-small="desc"><p>Explodes <code>$string</code> into a list using <code>$delimiter</code> as a delimiter.</p></td>
                   <td data-small="aliases">
                   
                     &mdash;
@@ -218,6 +232,18 @@
               
             
               
+                <tr>
+                  <td data-small="name"><a href="documentation.html#sl-is-empty">#</a> <code>sl-is-empty</code></td>
+                  <td data-small="desc"><p>Tests whether <code>$list</code> is empty.</p></td>
+                  <td data-small="aliases">
+                  
+                    <code>sl-empty</code>
+                  
+                  </td>
+                </tr>
+              
+            
+              
             
               
                 <tr>
@@ -255,6 +281,8 @@
                   
                   </td>
                 </tr>
+              
+            
               
             
               
@@ -475,8 +503,20 @@
             
               
                 <tr>
+                  <td data-small="name"><a href="documentation.html#sl-to-list">#</a> <code>sl-to-list</code></td>
+                  <td data-small="desc"><p>Casts <code>$value</code> into a list.</p></td>
+                  <td data-small="aliases">
+                  
+                    <code>sl-listify</code>
+                  
+                  </td>
+                </tr>
+              
+            
+              
+                <tr>
                   <td data-small="name"><a href="documentation.html#sl-to-map">#</a> <code>sl-to-map</code></td>
-                  <td data-small="desc"><p>Cast a <code>$list</code> into a map, using indexes as keys (starting with <code>$start</code>).
+                  <td data-small="desc"><p>Casts <code>$list</code> into a map, using indexes as keys (starting with <code>$start</code>).
 Useful for iterating through a list with an index variable.
 e.g. <code>@each $i, $value in to-map($list)</code></p></td>
                   <td data-small="aliases">

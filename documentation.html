@@ -50,6 +50,10 @@
               
               
               
+                <li><a href="#sl-comma-list">sl-comma-list</a></li>
+              
+              
+              
                 <li><a href="#sl-contain">sl-contain</a></li>
               
               
@@ -59,6 +63,8 @@
               
               
                 <li><a href="#sl-debug">sl-debug</a></li>
+              
+              
               
               
               
@@ -92,6 +98,10 @@
               
               
               
+                <li><a href="#sl-is-empty">sl-is-empty</a></li>
+              
+              
+              
               
               
                 <li><a href="#sl-is-symmetrical">sl-is-symmetrical</a></li>
@@ -105,6 +115,8 @@
               
               
                 <li><a href="#sl-last-index">sl-last-index</a></li>
+              
+              
               
               
               
@@ -193,6 +205,10 @@
               
               
                 <li><a href="#sl-tail">sl-tail</a></li>
+              
+              
+              
+                <li><a href="#sl-to-list">sl-to-list</a></li>
               
               
               
@@ -316,6 +332,41 @@
 
       
         
+      
+        
+<section class="function" id="sl-comma-list">
+  <h2 class="function-name"><code>sl-comma-list</code>
+
+  
+  </h2>
+
+  
+  
+
+  <div class="function-code  clearfix">
+    <pre class="pull-left">@function sl-comma-list () { ... }</pre>
+    <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_comma-list.scss" class="function-link  pull-right">View source</a>
+  </div>
+
+  <p class="function-role"><p>Initialize an empty comma-separated list.</p></p>
+
+  <h3 class="function-subheading">Parameters</h3>
+  
+    <p>None.</p>
+  
+
+  
+    <h3 class="function-return">Return</h3>
+    <ul class="list-unstyled">
+      <li><code>List</code></li>
+    </ul>
+  
+
+  
+
+  
+</section>
+
       
         
 <section class="function" id="sl-contain">
@@ -574,6 +625,8 @@
         
       
         
+      
+        
 <section class="function" id="sl-every">
   <h2 class="function-name"><code>sl-every</code>
 
@@ -710,7 +763,7 @@
     <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_explode.scss" class="function-link  pull-right">View source</a>
   </div>
 
-  <p class="function-role"><p>Explode <code>$string</code> into a list using <code>$delimiter</code> as a delimiter.</p></p>
+  <p class="function-role"><p>Explodes <code>$string</code> into a list using <code>$delimiter</code> as a delimiter.</p></p>
 
   <h3 class="function-subheading">Parameters</h3>
   
@@ -1127,6 +1180,77 @@
 
       
         
+<section class="function" id="sl-is-empty">
+  <h2 class="function-name"><code>sl-is-empty</code>
+
+  
+    <span class="sassdoc__item-alias">, aliased as 
+    
+      <a href="#function-sl-empty"><code>sl-empty</code></a>
+    
+    </span>
+
+  
+  </h2>
+
+  
+  
+    
+
+    
+
+    
+
+    
+      
+    
+  
+
+  <div class="function-code  clearfix">
+    <pre class="pull-left">@function sl-is-empty ($list) { ... }</pre>
+    <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_is-empty.scss" class="function-link  pull-right">View source</a>
+  </div>
+
+  <p class="function-role"><p>Tests whether <code>$list</code> is empty.</p></p>
+
+  <h3 class="function-subheading">Parameters</h3>
+  
+    <table class="table  function-arguments">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr class="sassdoc__item-parameter">
+            <td data-small="name"><code>$list</code></td>
+            <td data-small="type"><code>List</code></td>
+            <td data-small="default">&mdash;</td>
+            <td data-small="desc">list to run test against</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
+
+  
+    <h3 class="function-return">Return</h3>
+    <ul class="list-unstyled">
+      <li><code>Bool</code></li>
+    </ul>
+  
+
+  
+
+  
+</section>
+
+      
+        
       
         
 <section class="function" id="sl-is-symmetrical">
@@ -1421,6 +1545,8 @@
   
 </section>
 
+      
+        
       
         
 <section class="function" id="sl-loop">
@@ -3076,6 +3202,77 @@
 
       
         
+<section class="function" id="sl-to-list">
+  <h2 class="function-name"><code>sl-to-list</code>
+
+  
+    <span class="sassdoc__item-alias">, aliased as 
+    
+      <a href="#function-sl-listify"><code>sl-listify</code></a>
+    
+    </span>
+
+  
+  </h2>
+
+  
+  
+    
+
+    
+
+    
+
+    
+      
+    
+  
+
+  <div class="function-code  clearfix">
+    <pre class="pull-left">@function sl-to-list ($value) { ... }</pre>
+    <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_to-list.scss" class="function-link  pull-right">View source</a>
+  </div>
+
+  <p class="function-role"><p>Casts <code>$value</code> into a list.</p></p>
+
+  <h3 class="function-subheading">Parameters</h3>
+  
+    <table class="table  function-arguments">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr class="sassdoc__item-parameter">
+            <td data-small="name"><code>$value</code></td>
+            <td data-small="type">Any</td>
+            <td data-small="default">&mdash;</td>
+            <td data-small="desc">value to cast to list</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
+
+  
+    <h3 class="function-return">Return</h3>
+    <ul class="list-unstyled">
+      <li><code>List</code></li>
+    </ul>
+  
+
+  
+
+  
+</section>
+
+      
+        
 <section class="function" id="sl-to-map">
   <h2 class="function-name"><code>sl-to-map</code>
 
@@ -3121,7 +3318,7 @@
     <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_to-map.scss" class="function-link  pull-right">View source</a>
   </div>
 
-  <p class="function-role"><p>Cast a <code>$list</code> into a map, using indexes as keys (starting with <code>$start</code>).
+  <p class="function-role"><p>Casts <code>$list</code> into a map, using indexes as keys (starting with <code>$start</code>).
 Useful for iterating through a list with an index variable.
 e.g. <code>@each $i, $value in to-map($list)</code></p></p>
 
