@@ -1,3 +1,3 @@
 source "https://rubygems.org"
 
-gem 'SassyLists', '~> 2.0'
+gem 'SassyLists', '~> 2.1'
