@@ -1,5 +1,5 @@
-build
+build:
 		node build.js
 
-bundle
+bundle:
 		bundle install --path='./gems'
