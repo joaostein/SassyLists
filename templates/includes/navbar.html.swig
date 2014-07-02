@@ -5,7 +5,7 @@
         <span class="sr-only">Toggle navigation</span>
         &#9776;
       </button>
-      <a class="navbar-brand" href="http://sassylists.com/">SassyLists</a>
+      <a class="navbar-brand" href="http://sassylists.com/">SassyLists {{ version }}</a>
     </div>
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
