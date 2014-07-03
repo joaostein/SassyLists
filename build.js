@@ -5,7 +5,7 @@ var extras  = require('swig-extras');
 
 extras.useFilter(swig, 'markdown');
 
-var version = "2.1.1";
+var version = "2.2.0";
 
 sassdoc.parse(__dirname + '/gems/ruby/2.0.0/gems/SassyLists-' + version + '/stylesheets').then(function (items) {
   var templat_doc    = swig.compileFile(__dirname + '/templates/documentation.html.swig');

@@ -17,7 +17,7 @@
         <span class="sr-only">Toggle navigation</span>
         &#9776;
       </button>
-      <a class="navbar-brand" href="http://sassylists.com/">SassyLists 2.1.1</a>
+      <a class="navbar-brand" href="http://sassylists.com/">SassyLists 2.2.0</a>
     </div>
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -86,6 +86,14 @@
               
               
               
+                <li><a href="#sl-has-multiple-values">sl-has-multiple-values</a></li>
+              
+              
+              
+                <li><a href="#sl-has-values">sl-has-values</a></li>
+              
+              
+              
               
               
               
@@ -101,6 +109,12 @@
                 <li><a href="#sl-is-empty">sl-is-empty</a></li>
               
               
+              
+              
+              
+              
+              
+                <li><a href="#sl-is-single">sl-is-single</a></li>
               
               
               
@@ -147,6 +161,10 @@
                 <li><a href="#sl-random-value">sl-random-value</a></li>
               
               
+              
+              
+              
+                <li><a href="#sl-range">sl-range</a></li>
               
               
               
@@ -246,8 +264,6 @@
         
 <section class="function" id="sl-chunk">
   <h2 class="function-name"><code>sl-chunk</code>
-
-  
   </h2>
 
   
@@ -328,6 +344,13 @@
   
 
   
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-to-list"><code>sl-to-list</code></a></li>
+      </ul>
+    
+  
 </section>
 
       
@@ -336,8 +359,6 @@
         
 <section class="function" id="sl-comma-list">
   <h2 class="function-name"><code>sl-comma-list</code>
-
-  
   </h2>
 
   
@@ -370,10 +391,7 @@
       
         
 <section class="function" id="sl-contain">
-  <h2 class="function-name"><code>sl-contain</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-contain</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-include"><code>sl-include</code></a>
     
@@ -459,8 +477,6 @@
         
 <section class="function" id="sl-count-values">
   <h2 class="function-name"><code>sl-count-values</code>
-
-  
   </h2>
 
   
@@ -523,8 +539,6 @@
         
 <section class="function" id="sl-debug">
   <h2 class="function-name"><code>sl-debug</code>
-
-  
   </h2>
 
   
@@ -619,6 +633,21 @@
   
 
   
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-is-empty"><code>sl-is-empty</code></a></li>
+      
+    
+      
+      <li><a href="#sl-is-single"><code>sl-is-single</code></a></li>
+      
+    
+      
+      <li><a href="#sl-has-multiple-values"><code>sl-has-multiple-values</code></a></li>
+      </ul>
+    
+  
 </section>
 
       
@@ -629,8 +658,6 @@
         
 <section class="function" id="sl-every">
   <h2 class="function-name"><code>sl-every</code>
-
-  
   </h2>
 
   
@@ -729,8 +756,6 @@
         
 <section class="function" id="sl-explode">
   <h2 class="function-name"><code>sl-explode</code>
-
-  
   </h2>
 
   
@@ -757,9 +782,21 @@
       
     
   
+    
+
+    
+      
+    
+
+    
+
+    
+      
+    
+  
 
   <div class="function-code  clearfix">
-    <pre class="pull-left">@function sl-explode ($string, $separator: &#39;&#39;) { ... }</pre>
+    <pre class="pull-left">@function sl-explode ($string, $delimiter: &#39;&#39;, $separator: &#39;space&#39;) { ... }</pre>
     <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_explode.scss" class="function-link  pull-right">View source</a>
   </div>
 
@@ -786,10 +823,17 @@
           </tr>
         
           <tr class="sassdoc__item-parameter">
-            <td data-small="name"><code>$separator</code></td>
+            <td data-small="name"><code>$delimiter</code></td>
             <td data-small="type"><code>String</code></td>
             <td data-small="default">&#39;&#39;</td>
             <td data-small="desc">string to use as a delimiter</td>
+          </tr>
+        
+          <tr class="sassdoc__item-parameter">
+            <td data-small="name"><code>$separator</code></td>
+            <td data-small="type"><code>String</code></td>
+            <td data-small="default">&#39;space&#39;</td>
+            <td data-small="desc">list separator</td>
           </tr>
         
       </tbody>
@@ -822,10 +866,7 @@
       
         
 <section class="function" id="sl-first">
-  <h2 class="function-name"><code>sl-first</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-first</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-head"><code>sl-head</code></a>
     
@@ -895,15 +936,19 @@
   
 
   
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-is-empty"><code>sl-is-empty</code></a></li>
+      </ul>
+    
+  
 </section>
 
       
         
 <section class="function" id="sl-flatten">
-  <h2 class="function-name"><code>sl-flatten</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-flatten</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-unfold"><code>sl-unfold</code></a>
     
@@ -966,6 +1011,137 @@
   
 
   
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-has-multiple-values"><code>sl-has-multiple-values</code></a></li>
+      </ul>
+    
+  
+</section>
+
+      
+        
+<section class="function" id="sl-has-multiple-values">
+  <h2 class="function-name"><code>sl-has-multiple-values</code>
+  </h2>
+
+  
+  
+    
+
+    
+
+    
+
+    
+      
+    
+  
+
+  <div class="function-code  clearfix">
+    <pre class="pull-left">@function sl-has-multiple-values ($list) { ... }</pre>
+    <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_has-multiple-values.scss" class="function-link  pull-right">View source</a>
+  </div>
+
+  <p class="function-role"><p>Tests whether <code>$list</code> has at least 2 values.</p></p>
+
+  <h3 class="function-subheading">Parameters</h3>
+  
+    <table class="table  function-arguments">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr class="sassdoc__item-parameter">
+            <td data-small="name"><code>$list</code></td>
+            <td data-small="type"><code>List</code></td>
+            <td data-small="default">&mdash;</td>
+            <td data-small="desc">list to run test against</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
+
+  
+    <h3 class="function-return">Return</h3>
+    <ul class="list-unstyled">
+      <li><code>Bool</code></li>
+    </ul>
+  
+
+  
+
+  
+</section>
+
+      
+        
+<section class="function" id="sl-has-values">
+  <h2 class="function-name"><code>sl-has-values</code>
+  </h2>
+
+  
+  
+    
+
+    
+
+    
+
+    
+      
+    
+  
+
+  <div class="function-code  clearfix">
+    <pre class="pull-left">@function sl-has-values ($list) { ... }</pre>
+    <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_has-values.scss" class="function-link  pull-right">View source</a>
+  </div>
+
+  <p class="function-role"><p>Tests whether <code>$list</code> is not empty.</p></p>
+
+  <h3 class="function-subheading">Parameters</h3>
+  
+    <table class="table  function-arguments">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr class="sassdoc__item-parameter">
+            <td data-small="name"><code>$list</code></td>
+            <td data-small="type"><code>List</code></td>
+            <td data-small="default">&mdash;</td>
+            <td data-small="desc">list to run test against</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
+
+  
+    <h3 class="function-return">Return</h3>
+    <ul class="list-unstyled">
+      <li><code>Bool</code></li>
+    </ul>
+  
+
+  
+
+  
 </section>
 
       
@@ -976,8 +1152,6 @@
         
 <section class="function" id="sl-insert-nth">
   <h2 class="function-name"><code>sl-insert-nth</code>
-
-  
   </h2>
 
   
@@ -1092,8 +1266,6 @@
         
 <section class="function" id="sl-intersection">
   <h2 class="function-name"><code>sl-intersection</code>
-
-  
   </h2>
 
   
@@ -1173,6 +1345,10 @@
     
       <ul class="list-unstyled">
       <li><a href="#sl-remove-duplicates"><code>sl-remove-duplicates</code></a></li>
+      
+    
+      
+      <li><a href="#sl-to-list"><code>sl-to-list</code></a></li>
       </ul>
     
   
@@ -1181,10 +1357,7 @@
       
         
 <section class="function" id="sl-is-empty">
-  <h2 class="function-name"><code>sl-is-empty</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-is-empty</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-empty"><code>sl-empty</code></a>
     
@@ -1253,11 +1426,72 @@
         
       
         
-<section class="function" id="sl-is-symmetrical">
-  <h2 class="function-name"><code>sl-is-symmetrical</code>
+      
+        
+<section class="function" id="sl-is-single">
+  <h2 class="function-name"><code>sl-is-single</code>
+  </h2>
 
   
-    <span class="sassdoc__item-alias">, aliased as 
+  
+    
+
+    
+
+    
+
+    
+      
+    
+  
+
+  <div class="function-code  clearfix">
+    <pre class="pull-left">@function sl-is-single ($list) { ... }</pre>
+    <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_is-single.scss" class="function-link  pull-right">View source</a>
+  </div>
+
+  <p class="function-role"><p>Tests whether <code>$list</code> has a single item.</p></p>
+
+  <h3 class="function-subheading">Parameters</h3>
+  
+    <table class="table  function-arguments">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr class="sassdoc__item-parameter">
+            <td data-small="name"><code>$list</code></td>
+            <td data-small="type"><code>List</code></td>
+            <td data-small="default">&mdash;</td>
+            <td data-small="desc">list to run test against</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
+
+  
+    <h3 class="function-return">Return</h3>
+    <ul class="list-unstyled">
+      <li><code>Bool</code></li>
+    </ul>
+  
+
+  
+
+  
+</section>
+
+      
+        
+<section class="function" id="sl-is-symmetrical">
+  <h2 class="function-name"><code>sl-is-symmetrical</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-is-mirror"><code>sl-is-mirror</code></a>
     
@@ -1331,74 +1565,10 @@
 
       
         
-<section class="function" id="sl-is-true">
-  <h2 class="function-name"><code>sl-is-true</code>
-
-  
-  </h2>
-
-  
-  
-    
-
-    
-
-    
-
-    
-      
-    
-  
-
-  <div class="function-code  clearfix">
-    <pre class="pull-left">@function sl-is-true ($value) { ... }</pre>
-    <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_is-true.scss" class="function-link  pull-right">View source</a>
-  </div>
-
-  <p class="function-role"><p>Returns truthiness of <code>$value</code>.</p></p>
-
-  <h3 class="function-subheading">Parameters</h3>
-  
-    <table class="table  function-arguments">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Default value</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        
-          <tr class="sassdoc__item-parameter">
-            <td data-small="name"><code>$value</code></td>
-            <td data-small="type">Any</td>
-            <td data-small="default">&mdash;</td>
-            <td data-small="desc">value to check</td>
-          </tr>
-        
-      </tbody>
-    </table>
-  
-
-  
-    <h3 class="function-return">Return</h3>
-    <ul class="list-unstyled">
-      <li><code>Bool</code></li>
-    </ul>
-  
-
-  
-
-  
-</section>
-
       
         
 <section class="function" id="sl-last">
   <h2 class="function-name"><code>sl-last</code>
-
-  
   </h2>
 
   
@@ -1462,14 +1632,19 @@
   
 
   
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-is-empty"><code>sl-is-empty</code></a></li>
+      </ul>
+    
+  
 </section>
 
       
         
 <section class="function" id="sl-last-index">
   <h2 class="function-name"><code>sl-last-index</code>
-
-  
   </h2>
 
   
@@ -1550,10 +1725,7 @@
       
         
 <section class="function" id="sl-loop">
-  <h2 class="function-name"><code>sl-loop</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-loop</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-shift-indexes"><code>sl-shift-indexes</code></a>
     
@@ -1642,6 +1814,13 @@
   
 
   
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-has-multiple-values"><code>sl-has-multiple-values</code></a></li>
+      </ul>
+    
+  
 </section>
 
       
@@ -1654,78 +1833,12 @@
         
       
         
-<section class="function" id="sl-missing-dependencies">
-  <h2 class="function-name"><code>sl-missing-dependencies</code>
-
-  
-  </h2>
-
-  
-  
-    
-
-    
-
-    
-      
-    
-
-    
-      
-    
-  
-
-  <div class="function-code  clearfix">
-    <pre class="pull-left">@function sl-missing-dependencies ($functions...) { ... }</pre>
-    <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_missing-dependencies.scss" class="function-link  pull-right">View source</a>
-  </div>
-
-  <p class="function-role"><p>Checks whether <code>$functions</code> exist in global scope.</p></p>
-
-  <h3 class="function-subheading">Parameters</h3>
-  
-    <table class="table  function-arguments">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Default value</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        
-          <tr class="sassdoc__item-parameter">
-            <td data-small="name"><code>$functions</code></td>
-            <td data-small="type"><code>ArgList</code></td>
-            <td data-small="default">&mdash;</td>
-            <td data-small="desc">list of functions to check for</td>
-          </tr>
-        
-      </tbody>
-    </table>
-  
-
-  
-    <h3 class="function-return">Return</h3>
-    <ul class="list-unstyled">
-      <li>Whether or not there are missing dependencies: <code>Bool</code></li>
-    </ul>
-  
-
-  
-
-  
-</section>
-
       
         
       
         
 <section class="function" id="sl-prepend">
   <h2 class="function-name"><code>sl-prepend</code>
-
-  
   </h2>
 
   
@@ -1803,6 +1916,10 @@
     
       <ul class="list-unstyled">
       <li><a href="#sl-is-true"><code>sl-is-true</code></a></li>
+      
+    
+      
+      <li><a href="#sl-to-list"><code>sl-to-list</code></a></li>
       </ul>
     
   
@@ -1811,10 +1928,7 @@
       
         
 <section class="function" id="sl-purge">
-  <h2 class="function-name"><code>sl-purge</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-purge</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-clean"><code>sl-clean</code></a>
     
@@ -1881,6 +1995,10 @@
     
       <ul class="list-unstyled">
       <li><a href="#sl-is-true"><code>sl-is-true</code></a></li>
+      
+    
+      
+      <li><a href="#sl-to-list"><code>sl-to-list</code></a></li>
       </ul>
     
   
@@ -1889,10 +2007,7 @@
       
         
 <section class="function" id="sl-random-value">
-  <h2 class="function-name"><code>sl-random-value</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-random-value</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-roll"><code>sl-roll</code></a>
     
@@ -1964,17 +2079,98 @@
   
 
   
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-is-empty"><code>sl-is-empty</code></a></li>
+      </ul>
+    
+  
 </section>
 
       
         
       
         
-<section class="function" id="sl-remove">
-  <h2 class="function-name"><code>sl-remove</code>
+<section class="function" id="sl-range">
+  <h2 class="function-name"><code>sl-range</code>
+  </h2>
 
   
-    <span class="sassdoc__item-alias">, aliased as 
+  
+    
+
+    
+
+    
+
+    
+      
+    
+  
+
+  <div class="function-code  clearfix">
+    <pre class="pull-left">@function sl-range ($n) { ... }</pre>
+    <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_range.scss" class="function-link  pull-right">View source</a>
+  </div>
+
+  <p class="function-role"><p>Build a list of values from 1 through <code>$n</code>.</p></p>
+
+  <h3 class="function-subheading">Parameters</h3>
+  
+    <table class="table  function-arguments">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Default value</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr class="sassdoc__item-parameter">
+            <td data-small="name"><code>$n</code></td>
+            <td data-small="type"><code>Number</code></td>
+            <td data-small="default">&mdash;</td>
+            <td data-small="desc">maximum value</td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
+
+  
+    <h3 class="function-return">Return</h3>
+    <ul class="list-unstyled">
+      <li><code>List | Number | Null</code></li>
+    </ul>
+  
+
+  
+    <h3 class="function-errors">Throws</h3>
+    
+      <ul class="list-unstyled">
+      <li><p><code>$n</code> is not a number for <code>sl-range</code>.</p></li>
+      
+    
+      
+      <li><p><code>$n</code> is not unitless for <code>sl-range</code>.</p></li>
+      
+    
+      
+      <li><p><code>$n</code> is not greater than 0 for <code>sl-range</code>.</p></li>
+      </ul>
+    
+  
+
+  
+</section>
+
+      
+        
+<section class="function" id="sl-remove">
+  <h2 class="function-name"><code>sl-remove</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-without"><code>sl-without</code></a>
     
@@ -2083,10 +2279,7 @@
       
         
 <section class="function" id="sl-remove-duplicates">
-  <h2 class="function-name"><code>sl-remove-duplicates</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-remove-duplicates</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-unique"><code>sl-unique</code></a>
     
@@ -2149,15 +2342,19 @@
   
 
   
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-to-list"><code>sl-to-list</code></a></li>
+      </ul>
+    
+  
 </section>
 
       
         
 <section class="function" id="sl-remove-nth">
-  <h2 class="function-name"><code>sl-remove-nth</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-remove-nth</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-without-nth"><code>sl-without-nth</code></a>
     
@@ -2250,8 +2447,6 @@
         
 <section class="function" id="sl-replace">
   <h2 class="function-name"><code>sl-replace</code>
-
-  
   </h2>
 
   
@@ -2350,6 +2545,10 @@
     
       
       <li><a href="#sl-purge"><code>sl-purge</code></a></li>
+      
+    
+      
+      <li><a href="#sl-to-list"><code>sl-to-list</code></a></li>
       </ul>
     
   
@@ -2359,8 +2558,6 @@
         
 <section class="function" id="sl-replace-nth">
   <h2 class="function-name"><code>sl-replace-nth</code>
-
-  
   </h2>
 
   
@@ -2466,6 +2663,10 @@
     
       
       <li><a href="#sl-is-true"><code>sl-is-true</code></a></li>
+      
+    
+      
+      <li><a href="#sl-to-list"><code>sl-to-list</code></a></li>
       </ul>
     
   
@@ -2476,10 +2677,7 @@
       
         
 <section class="function" id="sl-reverse">
-  <h2 class="function-name"><code>sl-reverse</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-reverse</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-mirror"><code>sl-mirror</code></a>
     
@@ -2542,6 +2740,13 @@
   
 
   
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-to-list"><code>sl-to-list</code></a></li>
+      </ul>
+    
+  
 </section>
 
       
@@ -2551,10 +2756,7 @@
       
         
 <section class="function" id="sl-shuffle">
-  <h2 class="function-name"><code>sl-shuffle</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-shuffle</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-randomize"><code>sl-randomize</code></a>
     
@@ -2617,14 +2819,19 @@
   
 
   
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-to-list"><code>sl-to-list</code></a></li>
+      </ul>
+    
+  
 </section>
 
       
         
 <section class="function" id="sl-slice">
   <h2 class="function-name"><code>sl-slice</code>
-
-  
   </h2>
 
   
@@ -2748,8 +2955,6 @@
         
 <section class="function" id="sl-some">
   <h2 class="function-name"><code>sl-some</code>
-
-  
   </h2>
 
   
@@ -2847,10 +3052,7 @@
       
         
 <section class="function" id="sl-sort">
-  <h2 class="function-name"><code>sl-sort</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-sort</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-order"><code>sl-order</code></a>
     
@@ -2934,6 +3136,14 @@
     
       <ul class="list-unstyled">
       <li><a href="#sl-str-compare"><code>sl-str-compare</code></a></li>
+      
+    
+      
+      <li><a href="#sl-has-multiple-values"><code>sl-has-multiple-values</code></a></li>
+      
+    
+      
+      <li><a href="#sl-to-list"><code>sl-to-list</code></a></li>
       </ul>
     
   
@@ -2941,110 +3151,12 @@
 
       
         
-<section class="function" id="sl-str-compare">
-  <h2 class="function-name"><code>sl-str-compare</code>
-
-  
-  </h2>
-
-  
-  
-    
-
-    
-
-    
-
-    
-      
-    
-  
-    
-
-    
-
-    
-
-    
-      
-    
-  
-    
-
-    
-
-    
-
-    
-      
-    
-  
-
-  <div class="function-code  clearfix">
-    <pre class="pull-left">@function sl-str-compare ($a, $b, $matrix) { ... }</pre>
-    <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_str-compare.scss" class="function-link  pull-right">View source</a>
-  </div>
-
-  <p class="function-role"><p>Compares <code>$a</code> and <code>$b</code> based on <code>$order</code>.</p></p>
-
-  <h3 class="function-subheading">Parameters</h3>
-  
-    <table class="table  function-arguments">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Type</th>
-          <th>Default value</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        
-          <tr class="sassdoc__item-parameter">
-            <td data-small="name"><code>$a</code></td>
-            <td data-small="type">Any</td>
-            <td data-small="default">&mdash;</td>
-            <td data-small="desc">first value</td>
-          </tr>
-        
-          <tr class="sassdoc__item-parameter">
-            <td data-small="name"><code>$b</code></td>
-            <td data-small="type">Any</td>
-            <td data-small="default">&mdash;</td>
-            <td data-small="desc">second value</td>
-          </tr>
-        
-          <tr class="sassdoc__item-parameter">
-            <td data-small="name"><code>$matrix</code></td>
-            <td data-small="type"><code>List</code></td>
-            <td data-small="default">&mdash;</td>
-            <td data-small="desc">alphabetical order</td>
-          </tr>
-        
-      </tbody>
-    </table>
-  
-
-  
-    <h3 class="function-return">Return</h3>
-    <ul class="list-unstyled">
-      <li><code>Bool</code></li>
-    </ul>
-  
-
-  
-
-  
-</section>
-
       
         
       
         
 <section class="function" id="sl-sum">
   <h2 class="function-name"><code>sl-sum</code>
-
-  
   </h2>
 
   
@@ -3118,17 +3230,32 @@
   
 
   
+    <h3 class="function-errors">Throws</h3>
+    
+      <ul class="list-unstyled">
+      <li><p>All items from list are not numbers for <code>sl-sum</code>.</p></li>
+      </ul>
+    
+  
 
+  
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-every"><code>sl-every</code></a></li>
+      
+    
+      
+      <li><a href="#sl-is-number"><code>sl-is-number</code></a></li>
+      </ul>
+    
   
 </section>
 
       
         
 <section class="function" id="sl-tail">
-  <h2 class="function-name"><code>sl-tail</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-tail</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-rest"><code>sl-rest</code></a>
     
@@ -3203,10 +3330,7 @@
       
         
 <section class="function" id="sl-to-list">
-  <h2 class="function-name"><code>sl-to-list</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-to-list</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-listify"><code>sl-listify</code></a>
     
@@ -3227,9 +3351,21 @@
       
     
   
+    
+
+    
+      
+    
+
+    
+
+    
+      
+    
+  
 
   <div class="function-code  clearfix">
-    <pre class="pull-left">@function sl-to-list ($value) { ... }</pre>
+    <pre class="pull-left">@function sl-to-list ($value, $separator: space) { ... }</pre>
     <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_to-list.scss" class="function-link  pull-right">View source</a>
   </div>
 
@@ -3255,6 +3391,13 @@
             <td data-small="desc">value to cast to list</td>
           </tr>
         
+          <tr class="sassdoc__item-parameter">
+            <td data-small="name"><code>$separator</code></td>
+            <td data-small="type"><code>String</code></td>
+            <td data-small="default">space</td>
+            <td data-small="desc">separator to use</td>
+          </tr>
+        
       </tbody>
     </table>
   
@@ -3274,10 +3417,7 @@
       
         
 <section class="function" id="sl-to-map">
-  <h2 class="function-name"><code>sl-to-map</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-to-map</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-enumerate"><code>sl-enumerate</code></a>
     
@@ -3300,27 +3440,15 @@
       
     
   
-    
-
-    
-      
-    
-
-    
-
-    
-      
-    
-  
 
   <div class="function-code  clearfix">
-    <pre class="pull-left">@function sl-to-map ($list, $start: 1) { ... }</pre>
+    <pre class="pull-left">@function sl-to-map ($list) { ... }</pre>
     <a href="https://github.com/Team-Sass/SassyLists/blob/master/stylesheets/SassyLists/_to-map.scss" class="function-link  pull-right">View source</a>
   </div>
 
   <p class="function-role"><p>Casts <code>$list</code> into a map, using indexes as keys (starting with <code>$start</code>).
 Useful for iterating through a list with an index variable.
-e.g. <code>@each $i, $value in to-map($list)</code></p></p>
+e.g. <code>@each $index, $value in to-map($list)</code></p></p>
 
   <h3 class="function-subheading">Parameters</h3>
   
@@ -3342,13 +3470,6 @@ e.g. <code>@each $i, $value in to-map($list)</code></p></p>
             <td data-small="desc">list to turn into map</td>
           </tr>
         
-          <tr class="sassdoc__item-parameter">
-            <td data-small="name"><code>$start</code></td>
-            <td data-small="type"><code>Number</code></td>
-            <td data-small="default">1</td>
-            <td data-small="desc">index to start with</td>
-          </tr>
-        
       </tbody>
     </table>
   
@@ -3365,24 +3486,28 @@ e.g. <code>@each $i, $value in to-map($list)</code></p></p>
     
       <ul class="list-unstyled">
       <li><p>List cannot be empty for <code>sl-to-map</code>.</p></li>
-      
-    
-      
-      <li><p>$start is not a number for <code>sl-to-map</code>.</p></li>
       </ul>
     
   
 
+  
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-range"><code>sl-range</code></a></li>
+      
+    
+      
+      <li><a href="#sl-is-empty"><code>sl-is-empty</code></a></li>
+      </ul>
+    
   
 </section>
 
       
         
 <section class="function" id="sl-to-string">
-  <h2 class="function-name"><code>sl-to-string</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-to-string</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-stringify"><code>sl-stringify</code></a>
     
@@ -3464,6 +3589,17 @@ e.g. <code>@each $i, $value in to-map($list)</code></p></p>
   
 
   
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-has-multiple-values"><code>sl-has-multiple-values</code></a></li>
+      
+    
+      
+      <li><a href="#sl-last"><code>sl-last</code></a></li>
+      </ul>
+    
+  
 </section>
 
       
@@ -3471,10 +3607,7 @@ e.g. <code>@each $i, $value in to-map($list)</code></p></p>
       
         
 <section class="function" id="sl-union">
-  <h2 class="function-name"><code>sl-union</code>
-
-  
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>sl-union</code><span class="sassdoc__item-alias">, aliased as 
     
       <a href="#function-sl-merge"><code>sl-merge</code></a>
     
@@ -3558,8 +3691,6 @@ e.g. <code>@each $i, $value in to-map($list)</code></p></p>
         
 <section class="function" id="sl-walk">
   <h2 class="function-name"><code>sl-walk</code>
-
-  
   </h2>
 
   
@@ -3653,11 +3784,22 @@ e.g. <code>@each $i, $value in to-map($list)</code></p></p>
     <h3 class="function-errors">Throws</h3>
     
       <ul class="list-unstyled">
-      <li><p>There is no $function function.</p></li>
+      <li><p>There is no <code>$function</code> function for <code>sl-walk</code>.</p></li>
       </ul>
     
   
 
+  
+    <h3 class="function-dependence">Requires</h3>
+    
+      <ul class="list-unstyled">
+      <li><a href="#sl-to-map"><code>sl-to-map</code></a></li>
+      
+    
+      
+      <li><a href="#sl-to-list"><code>sl-to-list</code></a></li>
+      </ul>
+    
   
 </section>
 

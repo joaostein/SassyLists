@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    SassyLists (2.1.1)
+    SassyLists (2.2.0)
       sass (~> 3.3)
     sass (3.3.9)
 
@@ -10,4 +10,4 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  SassyLists (= 2.1.1)
+  SassyLists (= 2.2.0)

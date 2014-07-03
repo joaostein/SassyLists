@@ -1,9 +1,6 @@
-{% if item.alias == false %}
+{% if item.alias == false and item.access != "private" %}
 <section class="function" id="{{ item.name }}">
-  <h2 class="function-name"><code>{{ item.name }}</code>
-
-  {% if item.aliased.length > 0 %}
-    <span class="sassdoc__item-alias">, aliased as 
+  <h2 class="function-name"><code>{{ item.name }}</code>{% if item.aliased.length > 0 %}<span class="sassdoc__item-alias">, aliased as 
     {% for _alias in item.aliased %}
       <a href="#{{ item.type }}-{{ _alias }}"><code>{{ _alias }}</code></a>
     {% endfor %}

@@ -17,7 +17,7 @@
         <span class="sr-only">Toggle navigation</span>
         &#9776;
       </button>
-      <a class="navbar-brand" href="http://sassylists.com/">SassyLists 2.1.1</a>
+      <a class="navbar-brand" href="http://sassylists.com/">SassyLists 2.2.0</a>
     </div>
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -36,7 +36,7 @@
 
 <div class="jumbotron">
     <div class="container">
-        <h1>SassyLists <small>2.1.1</small></h1>
+        <h1>SassyLists <small>2.2.0</small></h1>
         <p>SassyLists is a toolbox providing you all the functions you need to manipulate your <a href="http://sass-lang.com">Sass</a> lists.</p>
         <p><a class="btn btn-info" href="documentation.html">Read documentation</a> <a class="btn btn-warning" href="https://github.com/Team-Sass/SassyLists/blob/master/CHANGELOG.md">Read changelog</a></p>
     </div>
@@ -204,6 +204,30 @@
               
             
               
+                <tr>
+                  <td data-small="name"><a href="documentation.html#sl-has-multiple-values">#</a> <code>sl-has-multiple-values</code></td>
+                  <td data-small="desc"><p>Tests whether <code>$list</code> has at least 2 values.</p></td>
+                  <td data-small="aliases">
+                  
+                    &mdash;
+                  
+                  </td>
+                </tr>
+              
+            
+              
+                <tr>
+                  <td data-small="name"><a href="documentation.html#sl-has-values">#</a> <code>sl-has-values</code></td>
+                  <td data-small="desc"><p>Tests whether <code>$list</code> is not empty.</p></td>
+                  <td data-small="aliases">
+                  
+                    &mdash;
+                  
+                  </td>
+                </tr>
+              
+            
+              
             
               
             
@@ -243,6 +267,20 @@
                 </tr>
               
             
+              
+            
+              
+            
+              
+                <tr>
+                  <td data-small="name"><a href="documentation.html#sl-is-single">#</a> <code>sl-is-single</code></td>
+                  <td data-small="desc"><p>Tests whether <code>$list</code> has a single item.</p></td>
+                  <td data-small="aliases">
+                  
+                    &mdash;
+                  
+                  </td>
+                </tr>
               
             
               
@@ -345,6 +383,18 @@
                 </tr>
               
             
+              
+            
+              
+                <tr>
+                  <td data-small="name"><a href="documentation.html#sl-range">#</a> <code>sl-range</code></td>
+                  <td data-small="desc"><p>Build a list of values from 1 through <code>$n</code>.</p></td>
+                  <td data-small="aliases">
+                  
+                    &mdash;
+                  
+                  </td>
+                </tr>
               
             
               
@@ -518,7 +568,7 @@
                   <td data-small="name"><a href="documentation.html#sl-to-map">#</a> <code>sl-to-map</code></td>
                   <td data-small="desc"><p>Casts <code>$list</code> into a map, using indexes as keys (starting with <code>$start</code>).
 Useful for iterating through a list with an index variable.
-e.g. <code>@each $i, $value in to-map($list)</code></p></td>
+e.g. <code>@each $index, $value in to-map($list)</code></p></td>
                   <td data-small="aliases">
                   
                     <code>sl-enumerate,sl-mapify</code>
